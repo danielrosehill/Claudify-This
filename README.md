@@ -6,21 +6,17 @@ It examines your repo, checks for `CLAUDE.md`, slash commands, subagents, skills
 
 ## Installation
 
-Copy the command file into any repo's `.claude/commands/` directory:
+Clone the repo and run the install script:
 
 ```bash
-mkdir -p .claude/commands
-cp claudify-repo.md .claude/commands/claudify-repo.md
+git clone https://github.com/danielrosehill/Claudify-This.git
+cd Claudify-This
+./install.sh
 ```
 
-Or install it as a **user-level command** (available in all repos):
+This installs `claudify-repo` as a user-level slash command available in every Claude Code session.
 
-```bash
-mkdir -p ~/.claude/commands
-cp claudify-repo.md ~/.claude/commands/claudify-repo.md
-```
-
-Then run it inside Claude Code:
+Then in any repo:
 
 ```
 /claudify-repo
